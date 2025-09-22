@@ -420,6 +420,56 @@ footer {
     box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.2);
 }
 
+.your-listings-section {
+    padding-top: 0;
+}
+
+.producer-products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    text-align: left;
+    max-width: 1200px;
+    margin: 30px auto 0;
+}
+
+.producer-products-grid .product-card {
+    background-color: #fff;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    transition: transform var(--transition-speed);
+}
+
+.producer-products-grid .product-card:hover {
+    transform: translateY(-5px);
+}
+
+.producer-products-grid .product-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.producer-products-grid .product-card h3 {
+    margin: 15px 15px 5px;
+    font-size: 1.2rem;
+}
+
+.producer-products-grid .product-card .price {
+    font-weight: 700;
+    color: var(--primary-color);
+    font-size: 1.1rem;
+    margin: 0 15px 15px;
+}
+
+.producer-products-grid .product-card .description {
+    font-size: 0.9rem;
+    color: #555;
+    margin: 0 15px 15px;
+}
+
+
 /* New CSS for Consumer Page (find-food.html) */
 .products-section {
     padding: 60px 0;

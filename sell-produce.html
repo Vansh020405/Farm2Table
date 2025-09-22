@@ -20,7 +20,7 @@
                 <li><a href="find-food.html">Find Food</a></li>
                 <li><a href="sell-produce.html">Sell Produce</a></li>
                 <li><a href="#">Community</a></li>
-                <li><a href="#">Log In</a></li>
+                <li><a href="#">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -37,7 +37,7 @@
             <div class="form-and-image-container">
                 <div class="form-container">
                     <h2>List Your Product</h2>
-                    <form class="product-form">
+                    <form class="product-form" id="product-form">
                         <div class="form-group">
                             <label for="product-name">Product Name</label>
                             <input type="text" id="product-name" name="product-name" placeholder="e.g., Organic Basil, Fresh Eggs" required>
@@ -50,15 +50,19 @@
                             <label for="product-category">Category</label>
                             <select id="product-category" name="product-category" required>
                                 <option value="">Select a Category</option>
-                                <option value="fruits">Fruits</option>
-                                <option value="vegetables">Vegetables</option>
-                                <option value="dairy">Dairy</option>
-                                <option value="artisan">Artisan Products</option>
+                                <option value="Vegetables">Vegetables</option>
+                                <option value="Fruits">Fruits</option>
+                                <option value="Dairy & Eggs">Dairy & Eggs</option>
+                                <option value="Artisan">Artisan Products</option>
                             </select>
                         </div>
                         <div class="form-group">
-                            <label for="product-image">Product Image</label>
-                            <input type="file" id="product-image" name="product-image" accept="image/*">
+                            <label for="product-price">Price (e.g., $5.00/lb)</label>
+                            <input type="text" id="product-price" name="product-price" placeholder="$ per unit" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="product-image-url">Image URL</label>
+                            <input type="url" id="product-image-url" name="product-image-url" placeholder="Paste image URL here" required>
                         </div>
                         <button type="submit" class="btn btn-primary">Submit Listing</button>
                     </form>
@@ -66,22 +70,26 @@
                 <div class="image-container">
                     <img src="https://media.istockphoto.com/id/1644584475/photo/fresh-farm-harvested-vegetables-in-wicker-basket.jpg?s=612x612&w=0&k=20&c=C_ceDrToPJQJ2pJDYCFxwmmrp2BmjO3Or42lEVUrE-E=" alt="Freshly harvested produce in a basket">
                 </div>
+
             </div>
         </section>
 
         <section class="benefits-section">
             <h2>Why Sell with Farm2Table?</h2>
             <div class="benefits-grid">
+               
                 <div class="benefit-card" style="background-color: rgb(214, 214, 214); padding: 40px; border-radius: 40px;margin-bottom: 10px;">
                     <i class="fas fa-hand-holding-dollar"></i>
                     <h3>Keep Your Profits</h3>
                     <p>No middlemen. Sell directly to your customers and earn what your hard work is worth.</p>
                 </div>
+                
                 <div class="benefit-card" style="background-color: rgb(214, 214, 214); padding: 40px; border-radius: 40px;margin-bottom: 10px;">
                     <i class="fas fa-users"></i>
                     <h3>Build Relationships</h3>
                     <p>Connect with a community of consumers and businesses who care about local food.</p>
                 </div>
+               
                 <div class="benefit-card" style="background-color: rgb(214, 214, 214); padding: 40px; border-radius: 40px;margin-bottom: 10px;">
                     <i class="fas fa-chart-line"></i>
                     <h3>Grow Your Business</h3>
