@@ -82,6 +82,18 @@ nav ul li a {
 nav ul li a:hover {
     color: var(--secondary-color);
 }
+/* Log In button styling */
+nav .btn {
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    font-weight: 600;
+    background-color: var(--primary-color);
+    color: var(--text-color-light);
+}
+nav .btn:hover {
+    background-color: #43a047;
+}
+
 
 /* Hero Section */
 .hero-section {
@@ -381,7 +393,7 @@ footer {
 }
 
 .form-group {
-    margin-bottom: 1.5rem; 
+    margin-bottom: 1.5rem;
 }
 
 .form-group label {
@@ -595,4 +607,48 @@ footer {
 .page-header-producer h2 {
     animation: glitch 1.5s infinite linear alternate-reverse;
     text-shadow: 2px 2px 0px rgba(76, 175, 80, 0.4), -2px -2px 0px rgba(255, 167, 38, 0.4);
+}
+
+/* New CSS for Log In Page (login.html) */
+.login-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 120px); /* Adjust height to fit above footer */
+}
+
+.login-card {
+    background-color: #fff;
+    padding: 3rem;
+    border-radius: var(--border-radius);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+}
+
+.login-card h2 {
+    margin-bottom: 0.5rem;
+    color: var(--primary-color);
+}
+
+.login-card p {
+    margin-bottom: 2rem;
+    color: #888;
+}
+
+.form-select {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: var(--border-radius);
+    font-family: var(--font-family);
+    margin-bottom: 2rem;
+}
+
+.hidden-form {
+    display: none;
+}
+
+.btn-full-width {
+    width: 100%;
 }

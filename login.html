@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In - Farm2Table</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html"><h1>Farm2Table</h1></a>
+            </div>
+            <ul>
+                <li><a href="find-food.html">Find Food</a></li>
+                <li><a href="sell-produce.html">Sell Produce</a></li>
+                <li><a href="#">Community</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="login.html" class="btn btn-primary">Log In</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="sub-page">
+        <section class="login-section">
+            <div class="login-card">
+                <h2>Welcome Back!</h2>
+                <p>Log in or sign up to get started.</p>
+
+                <div class="form-group">
+                    <label for="user-type">I am a:</label>
+                    <select id="user-type" class="form-select">
+                        <option value="">Select Account Type</option>
+                        <option value="consumer">Consumer / Business</option>
+                        <option value="producer">Producer (Farmer / Artisan)</option>
+                    </select>
+                </div>
+
+                <div id="consumer-form" class="hidden-form">
+                    <h3>Consumer / Business Login</h3>
+                    <form>
+                        <div class="form-group">
+                            <label for="consumer-email">Email Address</label>
+                            <input type="email" id="consumer-email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="consumer-password">Password</label>
+                            <input type="password" id="consumer-password" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full-width">Log In</button>
+                    </form>
+                </div>
+
+                <div id="producer-form" class="hidden-form">
+                    <h3>Producer Login</h3>
+                    <form>
+                        <div class="form-group">
+                            <label for="producer-email">Farm / Business Email</label>
+                            <input type="email" id="producer-email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="producer-password">Password</label>
+                            <input type="password" id="producer-password" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full-width">Log In</button>
+                    </form>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">Farm2Table</div>
+            <div class="footer-links">
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">How it Works</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Farm2Table Network. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
