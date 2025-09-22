@@ -374,7 +374,6 @@ footer {
 }
 
 .product-form {
-    width: 550px;
     background-color: #fff;
     padding: 3rem;
     border-radius: var(--border-radius);
@@ -382,7 +381,7 @@ footer {
 }
 
 .form-group {
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.5rem; 
 }
 
 .form-group label {
@@ -557,4 +556,43 @@ footer {
     .form-and-image-container {
         flex-direction: column;
     }
+}
+
+
+/* Retro TV Glitch Effect */
+.glitch-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: repeating-linear-gradient(
+        0deg,
+        rgba(0,0,0,0.1),
+        rgba(0,0,0,0.1) 1px,
+        transparent 1px,
+        transparent 2px
+    );
+    pointer-events: none;
+    opacity: 0.05;
+    z-index: 999;
+}
+
+@keyframes glitch {
+    0% { transform: translate(0); }
+    10% { transform: translate(-5px, 5px); }
+    20% { transform: translate(-5px, -5px); }
+    30% { transform: translate(5px, 5px); }
+    40% { transform: translate(5px, -5px); }
+    50% { transform: translate(0); }
+    60% { transform: translate(0, 5px); }
+    70% { transform: translate(-5px, 0); }
+    80% { transform: translate(5px, 0); }
+    90% { transform: translate(0); }
+    100% { transform: translate(0); }
+}
+
+.page-header-producer h2 {
+    animation: glitch 1.5s infinite linear alternate-reverse;
+    text-shadow: 2px 2px 0px rgba(76, 175, 80, 0.4), -2px -2px 0px rgba(255, 167, 38, 0.4);
 }
