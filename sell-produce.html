@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sell Your Produce - Farm2Table</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html"><h1>Farm2Table</h1></a>
+            </div>
+            <ul>
+                <li><a href="find-food.html">Find Food</a></li>
+                <li><a href="sell-produce.html">Sell Produce</a></li>
+                <li><a href="#">Community</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="sub-page">
+        <section class="page-header page-header-producer">
+            <div class="page-header-content">
+                <h2>Empower Your Harvest. Connect with Your Community.</h2>
+                <p>It's easy to sell your produce and artisan goods directly to local consumers and businesses. We provide the tools, you provide the freshness.</p>
+            </div>
+        </section>
+
+        <section class="list-product-section">
+            <div class="form-and-image-container">
+                <div class="form-container">
+                    <h2>List Your Product</h2>
+                    <form class="product-form">
+                        <div class="form-group">
+                            <label for="product-name">Product Name</label>
+                            <input type="text" id="product-name" name="product-name" placeholder="e.g., Organic Basil, Fresh Eggs" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="product-description">Description</label>
+                            <textarea id="product-description" name="product-description" rows="4" placeholder="Tell your customers about your product..." required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="product-category">Category</label>
+                            <select id="product-category" name="product-category" required>
+                                <option value="">Select a Category</option>
+                                <option value="fruits">Fruits</option>
+                                <option value="vegetables">Vegetables</option>
+                                <option value="dairy">Dairy</option>
+                                <option value="artisan">Artisan Products</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="product-image">Product Image</label>
+                            <input type="file" id="product-image" name="product-image" accept="image/*">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit Listing</button>
+                    </form>
+                </div>
+                <div class="image-container">
+                    <img src="https://images.unsplash.com/photo-1544026369-0e7040d1645e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80" alt="Freshly harvested produce in a basket">
+                </div>
+            </div>
+        </section>
+
+        <section class="benefits-section">
+            <h2>Why Sell with Farm2Table?</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <i class="fas fa-hand-holding-dollar"></i>
+                    <h3>Keep Your Profits</h3>
+                    <p>No middlemen. Sell directly to your customers and earn what your hard work is worth.</p>
+                </div>
+                <div class="benefit-card">
+                    <i class="fas fa-users"></i>
+                    <h3>Build Relationships</h3>
+                    <p>Connect with a community of consumers and businesses who care about local food.</p>
+                </div>
+                <div class="benefit-card">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Grow Your Business</h3>
+                    <p>Gain visibility and reach new customers beyond your immediate location.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">Farm2Table</div>
+            <div class="footer-links">
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">How it Works</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Farm2Table Network. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -343,3 +343,218 @@ footer {
     padding-top: 20px;
     border-top: 1px solid #333;
 }
+
+/* New CSS for Producer Page (sell-produce.html) */
+.form-and-image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: left;
+    flex-wrap: wrap;
+}
+
+.form-container {
+    flex: 1;
+    min-width: 300px;
+}
+
+.image-container {
+    flex: 1;
+    min-width: 300px;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    border-radius: var(--border-radius);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.product-form {
+    width: 1000px;
+    background-color: #fff;
+    padding: 3rem;
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: var(--border-radius);
+    font-family: var(--font-family);
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.2);
+}
+
+/* New CSS for Consumer Page (find-food.html) */
+.products-section {
+    padding: 60px 0;
+}
+
+.main-content-wrapper {
+    display: flex;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.sidebar {
+    width: 250px;
+    flex-shrink: 0;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.sidebar h3 {
+    text-align: left;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+}
+
+.sidebar ul {
+    list-style: none;
+    text-align: left;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+    display: block;
+    padding: 10px;
+    border-radius: var(--border-radius);
+    color: var(--text-color-dark);
+    font-weight: 500;
+    transition: background-color var(--transition-speed), color var(--transition-speed);
+}
+
+.sidebar ul li a:hover {
+    background-color: var(--primary-color);
+    color: var(--text-color-light);
+}
+
+.sidebar ul li a i {
+    margin-right: 10px;
+}
+
+.main-products-view {
+    flex-grow: 1;
+}
+
+.search-container {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.search-input {
+    flex-grow: 1;
+    padding: 12px 20px;
+    border: 1px solid #ddd;
+    border-radius: var(--border-radius) 0 0 var(--border-radius);
+    font-family: var(--font-family);
+}
+
+.search-btn {
+    padding: 12px 20px;
+    border: none;
+    background-color: var(--primary-color);
+    color: var(--text-color-light);
+    border-radius: 0 var(--border-radius) var(--border-radius) 0;
+    cursor: pointer;
+    transition: background-color var(--transition-speed);
+}
+
+.search-btn:hover {
+    background-color: #43a047;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    text-align: left;
+}
+
+.product-card {
+    background-color: #fff;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    transition: transform var(--transition-speed);
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.product-card h3 {
+    margin: 15px 15px 5px;
+    font-size: 1.2rem;
+}
+
+.product-card p {
+    margin: 0 15px 5px;
+    font-size: 0.9rem;
+}
+
+.product-card .price {
+    font-weight: 700;
+    color: var(--primary-color);
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+
+.product-card .btn {
+    width: calc(100% - 30px);
+    margin: 0 15px 15px;
+    text-align: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .main-content-wrapper {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .sidebar {
+        width: 100%;
+    }
+
+    .form-and-image-container {
+        flex-direction: column;
+    }
+}
